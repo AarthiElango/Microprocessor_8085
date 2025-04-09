@@ -1,0 +1,8 @@
+LDA 2000
+ANI 01
+JZ EVEN 
+MVI A,11; 11 as odd
+JMP STORE
+EVEN : MVI A,FF; ff as even 
+STORE : STA 2001
+HLT
